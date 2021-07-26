@@ -172,6 +172,54 @@ export default function Home() {
         <section className="card-list">
           <article className="card">
             <div className="card-header">
+              <h2>Associate of Applied Science Fisheries Technology </h2>
+              <h3>Mount Hood Community College - Gresham, OR</h3>
+            </div>
+            <div className="card-body">
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+
+              <span className="center">
+                <Image src="/23.jpg" height="200px" width="200px" alt="" />
+              </span>
+              <p></p>
+              <h3>
+                Fish Biology Technician - Intern US Fish and Wildlife Service
+                Vancouver, WA
+              </h3>
+              <ul>
+                <li>
+                  Prepared pit tags and field gear, and planned logistics for
+                  fishery research projects.
+                </li>
+                <li>
+                  Collected data; performed data entry and quality control with
+                  MS Access and Excel.
+                </li>
+                <li>
+                  Performed research in the field; used map, compass and GPS.
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article className="card">
+            <div className="card-header">
               <h2>Bachelor of Arts Environmental Science </h2>
               <h3>Marylhurst University - Marylhurst, OR</h3>
             </div>
@@ -218,54 +266,6 @@ export default function Home() {
                 <li>
                   Worked with maps and GPS units to mark and record coordinates,
                   plan access to streams and calculate mapped stream data.
-                </li>
-              </ul>
-            </div>
-          </article>
-          <article className="card">
-            <div className="card-header">
-              <h2>Associate of Applied Science Fisheries Technology </h2>
-              <h3>Mount Hood Community College - Gresham, OR</h3>
-            </div>
-            <div className="card-body">
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-
-              <span className="center">
-                <Image src="/23.jpg" height="200px" width="200px" alt="" />
-              </span>
-              <p></p>
-              <h3>
-                Fish Biology Technician - Intern US Fish and Wildlife Service
-                Vancouver, WA
-              </h3>
-              <ul>
-                <li>
-                  Prepared pit tags and field gear, and planned logistics for
-                  fishery research projects.
-                </li>
-                <li>
-                  Collected data; performed data entry and quality control with
-                  MS Access and Excel.
-                </li>
-                <li>
-                  Performed research in the field; used map, compass and GPS.
                 </li>
               </ul>
             </div>
