@@ -10,54 +10,6 @@ export default function Home() {
       </Head>
       <main>
         <span className="section__header">
-          <h2>Toolbox</h2>
-        </span>
-        <section className="card-list">
-          <article className="card">
-            <header className="card-header">
-              <h2>Developer Tools</h2>
-            </header>
-            <div className="card-body">
-              <ul>
-                <li>React - Next</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>javaScript</li>
-                <li>VS Code</li>
-              </ul>
-            </div>
-            <div class="tags">
-              <a href="#">html</a>
-              <a href="#">css</a>
-              <a href="#">web-dev</a>
-            </div>
-          </article>
-          <article className="card">
-            <header className="card-header">
-              <h2>Designer Tools</h2>
-            </header>
-            <div className="card-body">
-              <h3>Adobe CC</h3>
-              <p>
-                Expert level with over 25 years experience with the following
-                list of tools:
-              </p>
-              <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>In-Design</li>
-                <li>After Effect</li>
-                <li>Premiere</li>
-              </ul>
-            </div>
-            <div className="tags">
-              <a href="#">html</a>
-              <a href="#">css</a>
-              <a href="#">design</a>
-            </div>
-          </article>
-        </section>
-        <span className="section__header">
           <h2>Experience</h2>
         </span>
         <section className="card-list">
@@ -66,6 +18,7 @@ export default function Home() {
               <h2>New Media Developer</h2>
             </header>
             <div className="card-body">
+              <p></p>
               <h3>Roaring Fork Conservancy</h3>
               <ul>
                 <li>
@@ -101,10 +54,7 @@ export default function Home() {
             <div className="card-body">
               <h3>Newbury Art and Design, LLC</h3>
               <p>
-                <em>
-                  -- formerly John P Newbury Angling Arts - current portfolio of
-                  skills --
-                </em>
+                <em>-- formerly John P Newbury Angling Arts --</em>
               </p>
               <ul>
                 <li>
@@ -162,6 +112,61 @@ export default function Home() {
           </article>
         </section>
         <span className="section__header">
+          <h2>Toolbox</h2>
+        </span>
+        <section className="card-list">
+          <article className="card">
+            <header className="card-header">
+              <h2>Developer Tools</h2>
+            </header>
+            <div className="card-body">
+              <ul>
+                <li>React - Next</li>
+                <li>HTML</li>
+                <li>CSS - SCSS</li>
+                <li>javaScript</li>
+                <li>VS Code</li>
+              </ul>
+              <h3>Legacy</h3>
+              <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Apache</li>
+              </ul>
+            </div>
+            <div class="tags">
+              <a href="#">html</a>
+              <a href="#">css</a>
+              <a href="#">web-dev</a>
+            </div>
+          </article>
+          <article className="card">
+            <header className="card-header">
+              <h2>Designer Tools</h2>
+            </header>
+            <div className="card-body">
+              <h3>Adobe CC</h3>
+              <p>
+                Expert level with over 25 years experience with the following
+                list of tools:
+              </p>
+              <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>In-Design</li>
+                <li>After Effect</li>
+                <li>Premiere</li>
+              </ul>
+            </div>
+            <div className="tags">
+              <a href="#">html</a>
+              <a href="#">css</a>
+              <a href="#">design</a>
+            </div>
+          </article>
+        </section>
+
+        <span className="section__header">
           <h2>Education</h2>
         </span>
         <section className="card-list">
@@ -192,12 +197,15 @@ export default function Home() {
               <p></p>
               <p></p>
               <p></p>
-              <Image src="/MU.png" height="200px" width="200px" alt="" />
+              <span className="center">
+                <Image src="/MU.png" height="200px" width="200px" alt="" />
+              </span>
+
               <p></p>
-              <p>
+              <h3>
                 Stream Surveyor - Intern US Forest Services Mt Hood National
                 Forest
-              </p>
+              </h3>
               <ul>
                 <li>
                   Performed data entry and processing, and quality control using
@@ -243,11 +251,10 @@ export default function Home() {
                 <Image src="/23.jpg" height="200px" width="200px" alt="" />
               </span>
               <p></p>
-
-              <p>
+              <h3>
                 Fish Biology Technician - Intern US Fish and Wildlife Service
                 Vancouver, WA
-              </p>
+              </h3>
               <ul>
                 <li>
                   Prepared pit tags and field gear, and planned logistics for
@@ -258,10 +265,68 @@ export default function Home() {
                   MS Access and Excel.
                 </li>
                 <li>
-                  {" "}
                   Performed research in the field; used map, compass and GPS.
                 </li>
               </ul>
+            </div>
+          </article>
+        </section>
+        <span className="section__header">
+          <h2>Art Direction</h2>
+        </span>
+        <section className="card-list">
+          <article className="card">
+            <div className="card-header">
+              <h2>Fine Artist - Painting</h2>
+            </div>
+            <div className="card-body">
+              <p></p>
+              <p></p>
+              <p></p>
+              <span className="center">
+                <Image src="/Spell.jpg" width="320px" height="240px" alt="" />
+              </span>
+              <p className="center">Spell of the Sensous</p>
+              <p className="center">OIl on canvas 24" x 36"</p>
+            </div>
+          </article>
+          <article className="card">
+            <div className="card-header">
+              <h2>Digital Illustration</h2>
+            </div>
+            <div className="card-body">
+              <p></p>
+              <p></p>
+              <p></p>
+              <span className="center">
+                <Image
+                  src="/SeattleSkylineCopy.png"
+                  width="320px"
+                  height="240px"
+                  alt=""
+                />
+              </span>
+              <p className="center">Seattle Skyline</p>
+              <p className="center">Affinity Designer</p>
+            </div>
+          </article>
+          <article className="card">
+            <div className="card-header">
+              <h2>Photography</h2>
+            </div>
+            <div className="card-body">
+              <p></p>
+              <p></p>
+              <p></p>
+              <span className="center">
+                <Image
+                  src="/OG-Dirty-Hipster.jpg"
+                  width="220px"
+                  height="240px"
+                  alt=""
+                />
+              </span>
+              <p className="center">Macro Photography</p>
             </div>
           </article>
         </section>
