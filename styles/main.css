@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -34,7 +35,7 @@ p {
 h1 {
   padding: 3px;
   margin: 3px;
-  font-size: clamp(1.8rem, 3.5rem, 6vw);
+  font-size: clamp(2.5rem, 5rem, 6vw);
   /* min, val, max */
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -43,7 +44,7 @@ h1 {
 h2 {
   padding: 3px;
   margin: 3px;
-  font-size: clamp(1.5rem, 1.8rem, 3vw);
+  font-size: clamp(1.2rem, 1.8rem, 3vw);
   /* min, val, max */
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -71,8 +72,8 @@ ul {
 
 li {
   color: #fafafa;
-  font-family: "Lora", serif;
-  font-size: 0.85rem;
+  font-family: "STIX Two Math", serif;
+  font-size: 1.25rem;
   line-height: 1.5em;
   padding: 3px;
   margin: 3px;
@@ -98,6 +99,7 @@ strong {
 }
 
 .card-list {
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,6 +132,9 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin: 0;
   padding: 1.5rem;
   height: auto;
@@ -143,6 +148,11 @@ strong {
   transition: 0.2s;
   scroll-snap-align: start;
   clear: both;
+}
+
+.card-body p {
+  font-family: "Lora", serif;
+  color: white;
 }
 
 .card:focus-within ~ .card,
@@ -161,7 +171,12 @@ strong {
 }
 
 .card-header {
-  margin-bottom: auto;
+  background-image: url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -35px;
+  background-position-y: 15px;
+  height: 50px;
 }
 
 .card-header p {
@@ -172,7 +187,7 @@ strong {
 
 .card-header h2 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(2rem, 1.8rem, 3vw);
+  font-size: clamp(1.2rem, 1.8rem, 3vw);
   /* min, val, max */
   margin: 0.25rem 0 auto;
   text-decoration: none;
@@ -185,51 +200,6 @@ strong {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-}
-
-.card-author {
-  margin: 3rem 0 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 75px 1fr;
-      grid-template-columns: 75px 1fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-.author-avatar {
-  grid-area: auto;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.author-avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  display: block;
-  overflow: hidden;
-  margin: 16px 10px;
-}
-
-.author-name {
-  grid-area: auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.author-name-prefix {
-  font-style: normal;
-  font-weight: 700;
-  color: #7a7a8c;
 }
 
 .half-circle {
@@ -280,19 +250,16 @@ strong {
   display: inline-block;
   margin: clamp(0.5rem, 0.25rem, 3rem);
   /* min, val, max */
-  font-size: clamp(2rem, 4rem, 5vw);
+  font-size: clamp(3rem, 4rem, 5vw);
   /* min, val, max */
   background: -webkit-gradient(linear, left bottom, left top, from(#ffd900), to(#2ee5d6));
   background: linear-gradient(0deg, #ffd900, #2ee5d6);
   text-decoration: none;
-  color: inherit;
-  border: 0;
-  text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0a0a0a;
   font-family: "Poppins", sans-serif;
 }
 
@@ -318,9 +285,13 @@ strong {
 }
 
 .introduction p {
+  padding: 10px;
+  font-size: 0.85rem;
   font-family: "Lora", serif;
   font-weight: 600;
-  line-height: 1.6rem;
+  line-height: 1.4rem;
   color: white;
+  background: rgba(100, 100, 100, 0.1);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */

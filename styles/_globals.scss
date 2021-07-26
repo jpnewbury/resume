@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "variables";
+
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
 $font-heading: "Poppins", sans-serif;
 $font-body: "Lora", serif;
+$font-list: "STIX Two Math", serif;
 
 @mixin block {
     // basic margin and padding
@@ -48,13 +51,13 @@ p {
 
 h1 {
     @include block;
-    font-size: clamp(1.8rem, 3.5rem, 6vw); /* min, val, max */
+    font-size: clamp(2.5rem, 5rem, 6vw); /* min, val, max */
     font-family: $font-heading;
     font-weight: 900;
 }
 h2 {
     @include block;
-    font-size: clamp(1.5rem, 1.8rem, 3vw); /* min, val, max */
+    font-size: clamp(1.2rem, 1.8rem, 3vw); /* min, val, max */
     font-family: $font-heading;
     font-weight: 900;
     background: linear-gradient(90deg, #ff8a00, #e52e71);
@@ -76,8 +79,8 @@ ul {
 }
 li {
     color: $gray-9;
-    font-family: $font-body;
-    font-size: 0.85rem;
+    font-family: $font-list;
+    font-size: 1.25rem;
     line-height: 1.5em;
     padding: $padding;
     margin: $margin;

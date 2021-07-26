@@ -2,6 +2,7 @@
 $gadient-start: #ffd900;
 $gradient-end: #2ee5d6;
 .card-list {
+    background-size: cover;
     display: flex;
     padding: 3rem;
     overflow-x: scroll;
@@ -25,6 +26,7 @@ $gradient-end: #2ee5d6;
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: flex-start;
     margin: 0;
     padding: 1.5rem;
     height: auto;
@@ -36,6 +38,13 @@ $gradient-end: #2ee5d6;
     transition: 0.2s;
     scroll-snap-align: start;
     clear: both;
+}
+
+.card-body {
+    p {
+        font-family: $font-body;
+        color: $white;
+    }
 }
 
 .card:focus-within ~ .card,
@@ -52,7 +61,12 @@ $gradient-end: #2ee5d6;
 }
 
 .card-header {
-    margin-bottom: auto;
+    background-image: url("/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -35px;
+    background-position-y: 15px;
+    height: 50px;
 }
 
 .card-header p {
@@ -61,55 +75,21 @@ $gradient-end: #2ee5d6;
     color: #7a7a8c;
 }
 
-.card-header h2 {
-    font-family: $font-heading;
-    font-size: clamp(2rem, 1.8rem, 3vw); /* min, val, max */
-    margin: 0.25rem 0 auto;
-    text-decoration: none;
-    color: inherit;
-    border: 0;
-    display: inline-block;
-    background: linear-gradient(90deg, $gadient-start, $gradient-end);
-    text-shadow: none;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-.card-author {
-    margin: 3rem 0 0;
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    align-items: center;
-    position: relative;
-}
-
-.author-avatar {
-    grid-area: auto;
-    align-self: start;
-    position: relative;
-    box-sizing: border-box;
-}
-
-.author-avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    filter: grayscale(100%);
-    display: block;
-    overflow: hidden;
-    margin: 16px 10px;
-}
-
-.author-name {
-    grid-area: auto;
-    box-sizing: border-box;
-}
-
-.author-name-prefix {
-    font-style: normal;
-    font-weight: 700;
-    color: #7a7a8c;
+.card-header {
+    h2 {
+        font-family: $font-heading;
+        font-size: clamp(1.2rem, 1.8rem, 3vw); /* min, val, max */
+        margin: 0.25rem 0 auto;
+        text-decoration: none;
+        color: inherit;
+        border: 0;
+        display: inline-block;
+        background: linear-gradient(90deg, $gadient-start, $gradient-end);
+        text-shadow: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
 }
 
 .half-circle {
@@ -159,17 +139,14 @@ $gradient-end: #2ee5d6;
     h2 {
         display: inline-block;
         margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
-        font-size: clamp(2rem, 4rem, 5vw); /* min, val, max */
+        font-size: clamp(3rem, 4rem, 5vw); /* min, val, max */
         background: linear-gradient(0deg, $gadient-start, $gradient-end);
         text-decoration: none;
-        color: inherit;
-        border: 0;
-        text-shadow: none;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: $white;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $black;
         font-family: $font-heading;
     }
 }
@@ -192,9 +169,13 @@ $gradient-end: #2ee5d6;
 .introduction {
     @include block;
     p {
+        padding: 10px;
+        font-size: 0.85rem;
         font-family: $font-body;
         font-weight: 600;
-        line-height: 1.6rem;
+        line-height: 1.4rem;
         color: $white;
+        background: rgba($gray-3, 0.1);
+        border-radius: 10px;
     }
 }
