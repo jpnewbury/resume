@@ -41,6 +41,9 @@ $gradient-end: #2ee5d6;
 }
 
 .card-body {
+    h2 {
+        display: inline-block;
+    }
     p {
         font-family: $font-body;
         color: $white;
@@ -91,7 +94,9 @@ $gradient-end: #2ee5d6;
         background-clip: text;
     }
 }
-
+.center {
+    @include center;
+}
 .half-circle {
     position: absolute;
     bottom: 0;
@@ -103,6 +108,9 @@ $gradient-end: #2ee5d6;
     stroke-width: 8;
     stroke-linecap: round;
     pointer-events: none;
+}
+.container {
+    max-width: 1000px;
 }
 
 .tags {
