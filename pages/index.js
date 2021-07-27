@@ -9,9 +9,12 @@ export default function Home() {
         <title>John Newbury - Creative Front End Developer</title>
       </Head>
       <main>
-        <span className="section__header">
-          <h2>Toolbox</h2>
-        </span>
+        <div className="parent">
+          <span className="section__header">
+            <h2>Toolbox</h2>
+          </span>
+        </div>
+
         <section className="card-list bg-1">
           <article className="card">
             <header className="card-header">
@@ -66,7 +69,11 @@ export default function Home() {
         </section>
 
         <span className="section__header">
-          <h2>Experience</h2>
+          <div className="parent">
+            <h2>Experience</h2>
+            {/* <div className="child"></div>
+            <div className="child1"></div> */}
+          </div>
         </span>
         <section className="card-main">
           <article className="experience-card ">
@@ -134,10 +141,10 @@ export default function Home() {
                   Ambassador with Fulling Mill US.
                 </li>
                 <li>
-                  Implement best practices for SEO ranking content migration and
-                  development, responsive design and accessibility.
+                  Implemented best practices for SEO ranking content migration
+                  and development, responsive design and accessibility.
                 </li>
-                <li>Build a social media presence as a brand ambassador.</li>
+                <li>Built a social media presence as a brand ambassador.</li>
                 <li>
                   Worked with Stripe, Squarespace on prior versions of
                   e-commerce website.
@@ -148,6 +155,7 @@ export default function Home() {
               <a href="#">html</a>
               <a href="#">css</a>
               <a href="#">design</a>
+              <a href="#">SVG</a>
             </div>
           </article>
           <article className="experience-card">
@@ -184,6 +192,7 @@ export default function Home() {
         <span className="section__header">
           <h2>Education</h2>
         </span>
+
         <section className="card-list bg-2">
           <article className="card">
             <div className="card-header">
@@ -305,7 +314,16 @@ export default function Home() {
               <p></p>
               <p></p>
               <span className="center">
-                <Image src="/Spell.jpg" width="320px" height="240px" alt="" />
+                <Link href="spell">
+                  <a>
+                    <Image
+                      src="/Spell.jpg"
+                      width="320px"
+                      height="240px"
+                      alt=""
+                    />
+                  </a>
+                </Link>
               </span>
               <p className="center">Spell of the Sensous</p>
               <p className="center">OIl on canvas 24" x 36"</p>
@@ -320,12 +338,17 @@ export default function Home() {
               <p></p>
               <p></p>
               <span className="center">
-                <Image
-                  src="/SeattleSkylineCopy.png"
-                  width="320px"
-                  height="240px"
-                  alt=""
-                />
+                <Link href="seattle">
+                  <a>
+                    <Image
+                      src="/Seattle.png"
+                      width="320px"
+                      height="240px"
+                      alt="Digital Illustraion of Seattle"
+                      quality="50"
+                    />
+                  </a>
+                </Link>
               </span>
               <p className="center">Seattle Skyline</p>
               <p className="center">Affinity Designer</p>
@@ -340,12 +363,16 @@ export default function Home() {
               <p></p>
               <p></p>
               <span className="center">
-                <Image
-                  src="/OG-Dirty-Hipster.jpg"
-                  width="220px"
-                  height="240px"
-                  alt=""
-                />
+                <Link href="flies">
+                  <a>
+                    <Image
+                      src="/OG-Dirty-Hipster.jpg"
+                      width="220px"
+                      height="240px"
+                      alt=""
+                    />
+                  </a>
+                </Link>
               </span>
               <p className="center">Macro Photography</p>
               <p className="center">Product photograpy</p>
