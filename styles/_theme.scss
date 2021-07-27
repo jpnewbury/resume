@@ -2,10 +2,27 @@
 $gadient-start: #ffd900;
 $gradient-end: #2ee5d6;
 .card-list {
-    background-size: cover;
     display: flex;
     padding: 3rem;
     overflow-x: scroll;
+}
+.bg-1 {
+    background-image: url("/HawthorneMist.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-2 {
+    background-image: url("/2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-3 {
+    background-image: url("/mine.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card-list::-webkit-scrollbar {
@@ -191,11 +208,11 @@ $gradient-end: #2ee5d6;
 .introduction {
     @include block;
     p {
-        padding: 10px;
-        font-size: 0.85rem;
+        padding: clamp(0.8em, 1.2em, 6em); /* min, val, max */
+        font-size: clamp(0.9rem, 2rem, 1.2vw); /* min, val, max */
         font-family: $font-body;
         font-weight: 600;
-        line-height: 1.4rem;
+        line-height: 1.8rem;
         color: $white;
         background: rgba($gray-3, 0.1);
         border-radius: 10px;
@@ -248,4 +265,12 @@ li::before {
 .small-card {
     margin: 10px;
     opacity: 0.8;
+}
+.footer {
+    @include block;
+    @include center;
+    p {
+        font-family: $font-list;
+        color: $white;
+    }
 }

@@ -102,12 +102,32 @@ strong {
 }
 
 .card-list {
-  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 3rem;
   overflow-x: scroll;
+}
+
+.bg-1 {
+  background-image: url("/HawthorneMist.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-2 {
+  background-image: url("/2.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-3 {
+  background-image: url("/mine.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-list::-webkit-scrollbar {
@@ -325,11 +345,13 @@ strong {
 }
 
 .introduction p {
-  padding: 10px;
-  font-size: 0.85rem;
+  padding: clamp(0.8em, 1.2em, 6em);
+  /* min, val, max */
+  font-size: clamp(0.9rem, 2rem, 1.2vw);
+  /* min, val, max */
   font-family: "Lora", serif;
   font-weight: 600;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
   color: white;
   background: rgba(100, 100, 100, 0.1);
   border-radius: 10px;
@@ -396,5 +418,24 @@ li::before {
 .small-card {
   margin: 10px;
   opacity: 0.8;
+}
+
+.footer {
+  padding: 3px;
+  margin: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

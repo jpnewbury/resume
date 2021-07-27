@@ -12,7 +12,7 @@ export default function Home() {
         <span className="section__header">
           <h2>Toolbox</h2>
         </span>
-        <section className="card-list">
+        <section className="card-list bg-1">
           <article className="card">
             <header className="card-header">
               <h2>Developer Tools</h2>
@@ -184,13 +184,14 @@ export default function Home() {
         <span className="section__header">
           <h2>Education</h2>
         </span>
-        <section className="card-list">
+        <section className="card-list bg-2">
           <article className="card">
             <div className="card-header">
               <h2>Associate of Applied Science Fisheries Technology </h2>
               <h3>Mount Hood Community College - Gresham, OR</h3>
             </div>
             <div className="card-body">
+              <p></p>
               <p></p>
               <p></p>
               <p></p>
@@ -222,6 +223,12 @@ export default function Home() {
               <h3>Marylhurst University - Marylhurst, OR</h3>
             </div>
             <div className="card-body">
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
               <p></p>
               <p></p>
               <p></p>
@@ -288,7 +295,7 @@ export default function Home() {
           <h2>Art Direction</h2>
         </span>
 
-        <section className="card-list">
+        <section className="card-list bg-3">
           <article className="card">
             <div className="card-header">
               <h2>Fine Artist - Painting</h2>
