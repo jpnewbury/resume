@@ -9,6 +9,13 @@ export default function Home() {
         <title>John Newbury - Creative Front End Developer</title>
       </Head>
       <main>
+        <div className="nav">
+          <a href="#experience">experience</a>
+          &nbsp;
+          <a href="#education">education</a>
+          &nbsp;
+          <a href="#art">art director</a>
+        </div>
         <div className="parent">
           <span className="section__header">
             <h2>Toolbox</h2>
@@ -300,7 +307,7 @@ export default function Home() {
             </ul>
           </article>
         </section>
-        <span className="section__header">
+        <span className="section__header" id="art">
           <h2>Art Direction</h2>
         </span>
 

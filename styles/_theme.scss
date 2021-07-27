@@ -307,3 +307,7 @@ li::before {
     top: 0;
     left: 0;
 }
+.nav {
+    @include block;
+    padding-right: 20px;
+}
