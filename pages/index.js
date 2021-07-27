@@ -64,22 +64,7 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section className="grid-ish">
-          <div className="small-card center">
-            <Image src="/sass.png" height="50" width="100" alt="" />
-          </div>
-          <div className="small-card center">
-            <Image
-              src="/html-css-js-logos.png"
-              height="50"
-              width="100"
-              alt=""
-            />
-          </div>
-          <div className="small-card center">
-            <Image src="/mongo-db-logo.png" height="50" width="100" alt="" />
-          </div>
-        </section>
+
         <span className="section__header">
           <h2>Experience</h2>
         </span>
@@ -102,17 +87,17 @@ export default function Home() {
                   Designed original Fly-Fishing Journal for education programs.
                 </li>
                 <li>
-                  Create digital illustrations, provide photography for use in
+                  Created digital illustrations, provide photography for use in
                   publications.
                 </li>
-                <li>Write fly fishing articles for newsletter publication.</li>
+                <li>Wrote fly fishing articles for newsletter publication.</li>
                 <li>
-                  Participate in stream surveys and data collection in support
+                  Participated in stream surveys and data collection in support
                   of conservation efforts.
                 </li>
                 <li>
-                  Paint original river-based fine art for auction to benefit the
-                  organization.
+                  Painted original river-based fine art for auction to benefit
+                  the organization.
                 </li>
               </ul>
             </div>

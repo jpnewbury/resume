@@ -38,6 +38,7 @@ $gradient-end: #2ee5d6;
     transition: 0.2s;
     scroll-snap-align: start;
     clear: both;
+    border: 1px solid $gray-5;
 }
 
 .card-body {
