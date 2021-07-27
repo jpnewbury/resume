@@ -60,6 +60,7 @@ $gradient-end: #2ee5d6;
 
 .card-body {
     @include block;
+
     h2 {
         display: inline-block;
     }

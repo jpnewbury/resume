@@ -69,7 +69,7 @@ export default function Home() {
         </section>
 
         <span className="section__header">
-          <div className="parent">
+          <div className="parent" id="experience">
             <h2>Experience</h2>
             {/* <div className="child"></div>
             <div className="child1"></div> */}
@@ -189,7 +189,7 @@ export default function Home() {
           </article>
         </section>
 
-        <span className="section__header">
+        <span className="section__header" id="education">
           <h2>Education</h2>
         </span>
 
@@ -282,7 +282,7 @@ export default function Home() {
           </article>
           <article className="experience-card">
             <h3>
-              Fish Biology Technician - `US Fish and Wildlife Service Vancouver,
+              Fish Biology Technician - US Fish and Wildlife Service Vancouver,
               WA
             </h3>
             <ul>

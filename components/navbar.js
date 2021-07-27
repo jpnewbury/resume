@@ -13,6 +13,8 @@ export default function navbar() {
           excellence, creative solutions, and continuous learning.
         </p>
       </div>
+      <a href="#experience">experience</a>
+      <a href="#education">education</a>
     </div>
   );
 }
