@@ -10,108 +10,6 @@ export default function Home() {
       </Head>
       <main>
         <span className="section__header">
-          <h2>Experience</h2>
-        </span>
-        <section className="card-list">
-          <article className="card">
-            <header className="card-header">
-              <h2>New Media Developer</h2>
-            </header>
-            <div className="card-body">
-              <p></p>
-              <h3>Roaring Fork Conservancy</h3>
-              <ul>
-                <li>
-                  Designed digital application for Hot Spots for Trout campaign
-                  and citizen science data collection Designed original
-                  Fly-Fishing Journal for education programs.
-                </li>
-                <li>
-                  Create digital illustrations, provide photography for use in
-                  publications.
-                </li>
-                <li>Write fly fishing articles for newsletter publication.</li>
-                <li>
-                  Participate in stream surveys and data collection in support
-                  of conservation efforts
-                </li>
-                <li>
-                  Paint original river-based fine art for auction to benefit the
-                  organization.
-                </li>
-              </ul>
-            </div>
-            <div className="tags">
-              <a href="#">html</a>
-              <a href="#">css</a>
-              <a href="#">design</a>
-            </div>
-          </article>
-          <article className="card">
-            <header className="card-header">
-              <h2>Developer</h2>
-            </header>
-            <div className="card-body">
-              <h3>Newbury Art and Design, LLC</h3>
-              <p>
-                <em>-- formerly John P Newbury Angling Arts --</em>
-              </p>
-              <ul>
-                <li>
-                  Produce all illustrations, photography, and graphic design for
-                  business website.
-                </li>
-                <li>
-                  Developed full stack website using React/Next to educate a
-                  fly-fishing audience.
-                </li>
-                <li>
-                  Maintain commercial fly design contract and serve as
-                  Ambassador with Fulling Mill US.
-                </li>
-                <li>
-                  Implement best practices for SEO ranking content migration and
-                  development, responsive design and accessibility.
-                </li>
-              </ul>
-            </div>
-            <div className="tags">
-              <a href="#">html</a>
-              <a href="#">css</a>
-              <a href="#">design</a>
-            </div>
-          </article>
-          <article className="card">
-            <header className="card-header">
-              <h2>Owner - Contractor</h2>
-            </header>
-            <div className="card-body">
-              <h3>iSmart Media</h3>
-              <ul>
-                <li>Deep knowledge in JavaScript, CSS and HTML.</li>
-                <li>
-                  Operated freelance web development and graphic design company.
-                </li>
-                <li>
-                  Developed custom web applications based on unique business
-                  models.
-                </li>
-                <li>Worked multiple contracts concurrently.</li>
-                <li>Edited videos and created motion graphics.</li>
-                <li>
-                  Primary collaborators: Steinhauer Management Group, Gukeisen
-                  Design, Sales Tax Support.com.
-                </li>
-              </ul>
-            </div>
-            <div className="tags">
-              <a href="#">Web Design</a>
-              <a href="#">web master</a>
-              <a href="#">front end</a>
-            </div>
-          </article>
-        </section>
-        <span className="section__header">
           <h2>Toolbox</h2>
         </span>
         <section className="card-list">
@@ -125,6 +23,7 @@ export default function Home() {
                 <li>HTML</li>
                 <li>CSS - SCSS</li>
                 <li>javaScript</li>
+                <li>SVG graphics</li>
                 <li>VS Code</li>
               </ul>
               <h3>Legacy</h3>
@@ -165,6 +64,137 @@ export default function Home() {
             </div>
           </article>
         </section>
+        <section className="grid-ish">
+          <div className="small-card center">
+            <Image src="/sass.png" height="50" width="100" alt="" />
+          </div>
+          <div className="small-card center">
+            <Image
+              src="/html-css-js-logos.png"
+              height="50"
+              width="100"
+              alt=""
+            />
+          </div>
+          <div className="small-card center">
+            <Image src="/mongo-db-logo.png" height="50" width="100" alt="" />
+          </div>
+        </section>
+        <span className="section__header">
+          <h2>Experience</h2>
+        </span>
+        <section className="card-main">
+          <article className="experience-card ">
+            <header>
+              <h2>New Media Developer</h2>
+              <h3>Roaring Fork Conservancy</h3>
+            </header>
+            <div>
+              <ul>
+                <li>
+                  Designed single page web application (SPA) &nbsp;
+                  <Link href="http://www.roaringfork.org/drought/hot-spots-for-trout/">
+                    <a target="_blank">Hot Spots for Trout</a>
+                  </Link>{" "}
+                  campaign and citizen science data collection program.
+                </li>
+                <li>
+                  Designed original Fly-Fishing Journal for education programs.
+                </li>
+                <li>
+                  Create digital illustrations, provide photography for use in
+                  publications.
+                </li>
+                <li>Write fly fishing articles for newsletter publication.</li>
+                <li>
+                  Participate in stream surveys and data collection in support
+                  of conservation efforts.
+                </li>
+                <li>
+                  Paint original river-based fine art for auction to benefit the
+                  organization.
+                </li>
+              </ul>
+            </div>
+            <div className="tags">
+              <a href="#">html</a>
+              <a href="#">css</a>
+              <a href="#">design</a>
+              <a href="#">fine art</a>
+            </div>
+          </article>
+          <article className="experience-card">
+            <header>
+              <h2>Art Director</h2>
+            </header>
+            <div>
+              <h3>Newbury Art and Design, LLC</h3>
+
+              <em>-- formerly John P Newbury Angling Arts --</em>
+
+              <ul>
+                <li>
+                  Produce all digital assets including illustrations,
+                  photography, and graphic designs for&nbsp;
+                  <Link href="https://flyfish-pied.vercel.app/">
+                    <a target="_blank">business e-commerce website.</a>
+                  </Link>
+                </li>
+                <li>
+                  Developed full stack website using React/Next, MongoDB to
+                  educate a fly-fishing audience.
+                </li>
+                <li>
+                  Maintain commercial fly design contract and serve as
+                  Ambassador with Fulling Mill US.
+                </li>
+                <li>
+                  Implement best practices for SEO ranking content migration and
+                  development, responsive design and accessibility.
+                </li>
+                <li>Build a social media presence as a brand ambassador.</li>
+                <li>
+                  Worked with Stripe, Squarespace on prior versions of
+                  e-commerce website.
+                </li>
+              </ul>
+            </div>
+            <div className="tags">
+              <a href="#">html</a>
+              <a href="#">css</a>
+              <a href="#">design</a>
+            </div>
+          </article>
+          <article className="experience-card">
+            <header>
+              <h2>Owner - Contractor</h2>
+            </header>
+            <div>
+              <h3>iSmart Media</h3>
+              <ul>
+                <li>
+                  Operated freelance web development and graphic design company.
+                </li>
+
+                <li>
+                  Developed custom web applications based on unique business
+                  models using PHP MySQL, HTML, CSS and javaScript.
+                </li>
+                <li>Worked multiple contracts concurrently as a web master.</li>
+                <li>Edited videos and created motion graphics.</li>
+                <li>
+                  Primary collaborators: Steinhauer Management Group, Gukeisen
+                  Design, Sales Tax Support.com.
+                </li>
+              </ul>
+            </div>
+            <div className="tags">
+              <a href="#">Web Design</a>
+              <a href="#">web master</a>
+              <a href="#">front end</a>
+            </div>
+          </article>
+        </section>
 
         <span className="section__header">
           <h2>Education</h2>
@@ -199,23 +229,6 @@ export default function Home() {
                 <Image src="/23.jpg" height="200px" width="200px" alt="" />
               </span>
               <p></p>
-              <h3>
-                Fish Biology Technician - Intern US Fish and Wildlife Service
-                Vancouver, WA
-              </h3>
-              <ul>
-                <li>
-                  Prepared pit tags and field gear, and planned logistics for
-                  fishery research projects.
-                </li>
-                <li>
-                  Collected data; performed data entry and quality control with
-                  MS Access and Excel.
-                </li>
-                <li>
-                  Performed research in the field; used map, compass and GPS.
-                </li>
-              </ul>
             </div>
           </article>
           <article className="card">
@@ -236,44 +249,60 @@ export default function Home() {
               <p></p>
               <p></p>
               <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
+
               <span className="center">
                 <Image src="/MU.png" height="200px" width="200px" alt="" />
               </span>
-
-              <p></p>
-              <h3>
-                Stream Surveyor - Intern US Forest Services Mt Hood National
-                Forest
-              </h3>
-              <ul>
-                <li>
-                  Performed data entry and processing, and quality control using
-                  MS Access and Excel.
-                </li>
-                <li>
-                  Performed stream surveys using the R6 protocol on several
-                  streams.
-                </li>
-                <li>
-                  Worked with maps and GPS units to mark and record coordinates,
-                  plan access to streams and calculate mapped stream data.
-                </li>
-              </ul>
             </div>
+          </article>
+        </section>
+        <section>
+          <span className="section__header">
+            <h3>Internships</h3>
+          </span>
+          <article className="experience-card">
+            <h3>
+              Stream Surveyor - US Forest Services Mt Hood National Forest
+            </h3>
+            <ul>
+              <li>
+                Performed data entry and processing, and quality control using
+                MS Access and Excel.
+              </li>
+              <li>
+                Performed stream surveys using the R6 protocol on several
+                streams.
+              </li>
+              <li>
+                Worked with maps and GPS units to mark and record coordinates,
+                plan access to streams and calculate mapped stream data.
+              </li>
+            </ul>
+          </article>
+          <article className="experience-card">
+            <h3>
+              Fish Biology Technician - `US Fish and Wildlife Service Vancouver,
+              WA
+            </h3>
+            <ul>
+              <li>
+                Prepared pit tags and field gear, and planned logistics for
+                fishery research projects.
+              </li>
+              <li>
+                Collected data; performed data entry and quality control with MS
+                Access and Excel.
+              </li>
+              <li>
+                Performed research in the field; using map, compass and GPS.
+              </li>
+            </ul>
           </article>
         </section>
         <span className="section__header">
           <h2>Art Direction</h2>
         </span>
+
         <section className="card-list">
           <article className="card">
             <div className="card-header">
@@ -327,6 +356,7 @@ export default function Home() {
                 />
               </span>
               <p className="center">Macro Photography</p>
+              <p className="center">Product photograpy</p>
             </div>
           </article>
         </section>

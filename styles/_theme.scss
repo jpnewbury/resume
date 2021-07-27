@@ -144,6 +144,19 @@ $gradient-end: #2ee5d6;
 }
 
 .section__header {
+    h3 {
+        display: inline-block;
+        margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
+        font-size: clamp(2rem, 3rem, 3vw); /* min, val, max */
+        background: linear-gradient(45deg, $gadient-start, $gradient-end);
+        text-decoration: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $black;
+        font-family: $font-heading;
+    }
     h2 {
         display: inline-block;
         margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
@@ -186,4 +199,52 @@ $gradient-end: #2ee5d6;
         background: rgba($gray-3, 0.1);
         border-radius: 10px;
     }
+}
+
+.card-main {
+    @include block;
+}
+.experience-card {
+    em {
+        font-size: 0.85rem;
+        color: $gray-7;
+        margin-left: 17px;
+    }
+
+    li {
+        color: $gray-8;
+        font-family: $font-list;
+    }
+    h3 {
+        margin-left: 13px;
+        font-family: $font-heading;
+        font-style: oblique;
+        font-size: 1rem;
+        margin-top: -19px;
+        color: $gray-6;
+        text-decoration: underline;
+    }
+    background: linear-gradient(90deg, $gray-2, $gray-1);
+    @include block;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-left: 10px solid $gray-3;
+}
+li::before {
+    content: "✅ ";
+}
+
+.grid-ish > * {
+    flex: 1 1 200px;
+}
+
+.grid-ish {
+    @include block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.small-card {
+    margin: 10px;
+    opacity: 0.8;
 }

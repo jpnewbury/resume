@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "variables";
 
-@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 $font-heading: "Poppins", sans-serif;
 $font-body: "Lora", serif;
-$font-list: "STIX Two Math", serif;
+$font-list: "Open Sans", sans-serif;
 
 @mixin block {
     // basic margin and padding
@@ -36,10 +36,13 @@ body {
 *::after {
     box-sizing: border-box;
 }
-a link {
-    font-family: $font-body;
-    font-size: 0.8rem;
-    color: rebeccapurple;
+a {
+    font-family: $font-heading;
+
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: $white;
 }
 p {
     @include block;
@@ -80,11 +83,11 @@ ul {
 li {
     color: $gray-9;
     font-family: $font-list;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.5em;
     padding: $padding;
     margin: $margin;
-    list-style: disc inside;
+    list-style: none;
 }
 nav {
     padding: 20px;
