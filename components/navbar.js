@@ -2,7 +2,7 @@ import React from "react";
 
 export default function navbar() {
   return (
-    <div className="header">
+    <div className="header" id="top">
       <h1> John Newbury</h1>
       <h2> UX Design - Front End Web Developer</h2>
       <div className="introduction">

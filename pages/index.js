@@ -589,8 +589,12 @@ export default function Home() {
             </div>
           </article>
         </section>
-        <section>here</section>
       </main>
+      <div>
+        <Link href="#top">
+          <a>Back to top</a>
+        </Link>
+      </div>
     </div>
   );
 }
