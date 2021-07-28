@@ -334,15 +334,6 @@ export default function Home() {
                   </li>
                 </div>
                 <div className="center">
-                  <Check style="icon-green" />
-                </div>
-                <div>
-                  <li>
-                    Developed custom web applications based on unique business
-                    models using PHP MySQL, HTML, CSS and javaScript.
-                  </li>
-                </div>
-                <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
