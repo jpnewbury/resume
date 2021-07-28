@@ -12,10 +12,6 @@ $font-list: "Open Sans", sans-serif;
     margin: $margin;
 }
 
-@mixin border {
-    border: 1px solid black;
-    border-radius: 7px;
-}
 @mixin center {
     display: flex;
     align-items: center;
@@ -41,7 +37,6 @@ body {
 }
 a {
     font-family: $font-heading;
-
     font-size: 1rem;
     font-weight: 700;
     text-decoration: underline;
@@ -49,7 +44,6 @@ a {
 }
 p {
     @include block;
-
     line-height: 1.5em;
     font-size: 1rem;
     font-family: $font-body;
@@ -92,6 +86,9 @@ li {
     margin: $margin;
     list-style: none;
 }
+// li::before {
+//     content: url("/public/1.jpg");
+// }
 nav {
     padding: 20px;
 }

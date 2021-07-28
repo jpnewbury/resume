@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Toolbox from "../components/svg/toolbox";
+import Check from "../components/svg/check";
+import Check2 from "../components/svg/check2";
+import Briefcase from "../components/svg/briefcase";
 
 export default function Home() {
   return (
@@ -9,13 +13,6 @@ export default function Home() {
         <title>John Newbury - Creative Front End Developer</title>
       </Head>
       <main>
-        <div className="nav">
-          <a href="#experience">experience</a>
-          &nbsp;
-          <a href="#education">education</a>
-          &nbsp;
-          <a href="#art">art director</a>
-        </div>
         <div className="parent">
           <span className="section__header">
             <h2>Toolbox</h2>
@@ -27,21 +24,65 @@ export default function Home() {
             <header className="card-header">
               <h2>Developer Tools</h2>
             </header>
-            <div className="card-body">
-              <ul>
+            <div className="card-body col-2l">
+              <div className="center">
+                <Check style="icon-small" />
+              </div>
+              <div>
                 <li>React - Next</li>
+              </div>
+              <div className="center">
+                <Check style="icon-small" />
+              </div>
+              <div>
                 <li>HTML</li>
+              </div>
+              <div className="center">
+                <Check style="icon-small" />
+              </div>
+              <div>
                 <li>CSS - SCSS</li>
+              </div>
+              <div className="center">
+                <Check style="icon-small" />
+              </div>
+              <div>
                 <li>javaScript</li>
+              </div>
+              <div className="center">
+                <Check style="icon-small" />
+              </div>
+              <div>
                 <li>SVG graphics</li>
+              </div>
+              <div className="center">
+                <Check style="icon-small" />
+              </div>
+              <div>
                 <li>VS Code</li>
-              </ul>
-              <h3>Legacy</h3>
-              <ul>
+              </div>
+              <div className="center"></div>
+              <div>
+                <h3>Legacy Tools</h3>
+              </div>
+              <div className="center">
+                <Check2 style="icon-small-green" />
+              </div>
+              <div>
                 <li>PHP</li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-small-green" />
+              </div>
+              <div>
                 <li>MySQL</li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-small-green" />
+              </div>
+              <div>
                 <li>Apache</li>
-              </ul>
+              </div>
             </div>
             <div class="tags">
               <a href="#">html</a>
@@ -59,13 +100,53 @@ export default function Home() {
                 Expert level with over 25 years experience with the following
                 list of tools:
               </p>
-              <ul>
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>In-Design</li>
-                <li>After Effect</li>
-                <li>Premiere</li>
-              </ul>
+              <div className="col-2l">
+                <div className="center">
+                  <Check style="icon-small" />
+                </div>
+                <div>
+                  <li>Photoshop</li>
+                </div>
+                <div className="center">
+                  <Check style="icon-small" />
+                </div>
+                <div>
+                  <li>Illustrator</li>
+                </div>
+                <div className="center">
+                  <Check style="icon-small" />
+                </div>
+                <div>
+                  <li>In-Design</li>
+                </div>
+                <div className="center">
+                  <Check style="icon-small" />
+                </div>
+                <div>
+                  <li>After Effect</li>
+                </div>
+                <div className="center">
+                  <Check style="icon-small" />
+                </div>
+                <div>
+                  <li>Premiere</li>
+                </div>
+              </div>
+              <h3>New Tools</h3>
+              <div className="col-2l">
+                <div className="center">
+                  <Check2 style="icon-small-green" />
+                </div>
+                <div>
+                  <li>XD</li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-small-green" />
+                </div>
+                <div>
+                  <li>Figma</li>
+                </div>
+              </div>
             </div>
             <div className="tags">
               <a href="#">html</a>
@@ -78,8 +159,6 @@ export default function Home() {
         <span className="section__header">
           <div className="parent" id="experience">
             <h2>Experience</h2>
-            {/* <div className="child"></div>
-            <div className="child1"></div> */}
           </div>
         </span>
         <section className="card-main">
@@ -89,31 +168,65 @@ export default function Home() {
               <h3>Roaring Fork Conservancy</h3>
             </header>
             <div>
-              <ul>
-                <li>
-                  Designed single page web application (SPA) &nbsp;
-                  <Link href="http://www.roaringfork.org/drought/hot-spots-for-trout/">
-                    <a target="_blank">Hot Spots for Trout</a>
-                  </Link>{" "}
-                  campaign and citizen science data collection program.
-                </li>
-                <li>
-                  Designed original Fly-Fishing Journal for education programs.
-                </li>
-                <li>
-                  Created digital illustrations, provide photography for use in
-                  publications.
-                </li>
-                <li>Wrote fly fishing articles for newsletter publication.</li>
-                <li>
-                  Participated in stream surveys and data collection in support
-                  of conservation efforts.
-                </li>
-                <li>
-                  Painted original river-based fine art for auction to benefit
-                  the organization.
-                </li>
-              </ul>
+              <div className="col-2l">
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Designed single page web application (SPA) &nbsp;
+                    <Link href="http://www.roaringfork.org/drought/hot-spots-for-trout/">
+                      <a target="_blank">Hot Spots for Trout</a>
+                    </Link>{" "}
+                    campaign and citizen science data collection program.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Designed original Fly-Fishing Journal for education
+                    programs.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Created digital illustrations, provide photography for use
+                    in publications.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Wrote fly fishing articles for newsletter publication.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Participated in stream surveys and data collection in
+                    support of conservation efforts.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Painted original river-based fine art for auction to benefit
+                    the organization.
+                  </li>
+                </div>
+              </div>
+              <ul></ul>
             </div>
             <div className="tags">
               <a href="#">html</a>
@@ -131,32 +244,62 @@ export default function Home() {
 
               <em>-- formerly John P Newbury Angling Arts --</em>
 
-              <ul>
-                <li>
-                  Produce all digital assets including illustrations,
-                  photography, and graphic designs for&nbsp;
-                  <Link href="https://flyfish-pied.vercel.app/">
-                    <a target="_blank">business e-commerce website.</a>
-                  </Link>
-                </li>
-                <li>
-                  Developed full stack website using React/Next, MongoDB to
-                  educate a fly-fishing audience.
-                </li>
-                <li>
-                  Maintain commercial fly design contract and serve as
-                  Ambassador with Fulling Mill US.
-                </li>
-                <li>
-                  Implemented best practices for SEO ranking content migration
-                  and development, responsive design and accessibility.
-                </li>
-                <li>Built a social media presence as a brand ambassador.</li>
-                <li>
-                  Worked with Stripe, Squarespace on prior versions of
-                  e-commerce website.
-                </li>
-              </ul>
+              <div className="col-2l">
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Produce all digital assets including illustrations,
+                    photography, and graphic designs for&nbsp;
+                    <Link href="https://flyfish-pied.vercel.app/">
+                      <a target="_blank">business e-commerce website.</a>
+                    </Link>
+                  </li>
+                </div>
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Developed full stack website using React/Next, MongoDB to
+                    educate a fly-fishing audience.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Implemented best practices for SEO ranking content migration
+                    and development, responsive design and accessibility.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Maintain commercial fly design contract and serve as
+                    Ambassador with Fulling Mill US.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>Built a social media presence as a brand ambassador.</li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Worked with Stripe, Squarespace on prior versions of
+                    e-commerce website.
+                  </li>
+                </div>
+              </div>
             </div>
             <div className="tags">
               <a href="#">html</a>
@@ -171,22 +314,51 @@ export default function Home() {
             </header>
             <div>
               <h3>iSmart Media</h3>
-              <ul>
-                <li>
-                  Operated freelance web development and graphic design company.
-                </li>
-
-                <li>
-                  Developed custom web applications based on unique business
-                  models using PHP MySQL, HTML, CSS and javaScript.
-                </li>
-                <li>Worked multiple contracts concurrently as a web master.</li>
-                <li>Edited videos and created motion graphics.</li>
-                <li>
-                  Primary collaborators: Steinhauer Management Group, Gukeisen
-                  Design, Sales Tax Support.com.
-                </li>
-              </ul>
+              <div className="col-2l">
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Operated freelance web development and graphic design
+                    company.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Developed custom web applications based on unique business
+                    models using PHP MySQL, HTML, CSS and javaScript.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check style="icon-green" />
+                </div>
+                <div>
+                  <li>
+                    Developed custom web applications based on unique business
+                    models using PHP MySQL, HTML, CSS and javaScript.
+                  </li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>Edited videos and created motion graphics.</li>
+                </div>
+                <div className="center">
+                  <Check2 style="icon-lg" />
+                </div>
+                <div>
+                  <li>
+                    Primary collaborators: Steinhauer Management Group, Gukeisen
+                    Design, Sales Tax Support.com.
+                  </li>
+                </div>
+              </div>
+              <ul></ul>
             </div>
             <div className="tags">
               <a href="#">Web Design</a>
@@ -272,39 +444,70 @@ export default function Home() {
             <h3>
               Stream Surveyor - US Forest Services Mt Hood National Forest
             </h3>
-            <ul>
-              <li>
-                Performed data entry and processing, and quality control using
-                MS Access and Excel.
-              </li>
-              <li>
-                Performed stream surveys using the R6 protocol on several
-                streams.
-              </li>
-              <li>
-                Worked with maps and GPS units to mark and record coordinates,
-                plan access to streams and calculate mapped stream data.
-              </li>
-            </ul>
+            <div className="col-2l">
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Performed data entry and processing, and quality control using
+                  MS Access and Excel.
+                </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Performed stream surveys using the R6 protocol on several
+                  streams.
+                </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Worked with maps and GPS units to mark and record coordinates,
+                  plan access to streams and calculate mapped stream data.
+                </li>
+              </div>
+            </div>
           </article>
           <article className="experience-card">
             <h3>
               Fish Biology Technician - US Fish and Wildlife Service Vancouver,
               WA
             </h3>
-            <ul>
-              <li>
-                Prepared pit tags and field gear, and planned logistics for
-                fishery research projects.
-              </li>
-              <li>
-                Collected data; performed data entry and quality control with MS
-                Access and Excel.
-              </li>
-              <li>
-                Performed research in the field; using map, compass and GPS.
-              </li>
-            </ul>
+            <div className="col-2l">
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Prepared pit tags and field gear, and planned logistics for
+                  fishery research projects.
+                </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Collected data; performed data entry and quality control with
+                  MS Access and Excel.
+                </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Performed research in the field; using map, compass and GPS.
+                </li>
+              </div>
+            </div>
+            <ul></ul>
           </article>
         </section>
         <span className="section__header" id="art">
@@ -386,6 +589,7 @@ export default function Home() {
             </div>
           </article>
         </section>
+        <section>here</section>
       </main>
     </div>
   );

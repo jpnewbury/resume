@@ -1,11 +1,7 @@
 //
 $gadient-start: #ffd900;
 $gradient-end: #2ee5d6;
-.card-list {
-    display: flex;
-    padding: 3rem;
-    overflow-x: scroll;
-}
+
 .bg-1 {
     background-image: url("/HawthorneMist.jpg");
     background-position: top;
@@ -24,21 +20,6 @@ $gradient-end: #2ee5d6;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.card-list::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-.card-list::-webkit-scrollbar-thumb {
-    background: #201c29;
-    border-radius: 10px;
-    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
-}
-
-.card-list::-webkit-scrollbar-track {
-    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
-}
-
 .card {
     display: flex;
     position: relative;
@@ -57,17 +38,31 @@ $gradient-end: #2ee5d6;
     clear: both;
     border: 1px solid $gray-5;
 }
-
 .card-body {
     @include block;
 
-    h2 {
-        display: inline-block;
-    }
     p {
         font-family: $font-body;
         color: $white;
     }
+}
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+.card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.card-list::-webkit-scrollbar-thumb {
+    background: #201c29;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
 }
 
 .card:focus-within ~ .card,
@@ -120,6 +115,34 @@ $gradient-end: #2ee5d6;
         color: $white;
     }
 }
+.child {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.child1 {
+    position: absolute;
+    // background: linear-gradient(90deg, rgba(blue, 0.2), rgba(yellow, 0.2));
+    z-index: -101;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.col-2l {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+}
+.container {
+    max-width: 1000px;
+}
 .half-circle {
     position: absolute;
     bottom: 0;
@@ -132,10 +155,139 @@ $gradient-end: #2ee5d6;
     stroke-linecap: round;
     pointer-events: none;
 }
-.container {
-    max-width: 1000px;
+
+.experience-card {
+    em {
+        font-size: 0.85rem;
+        color: $gray-7;
+        margin-left: 17px;
+    }
+
+    li {
+        color: $gray-8;
+        font-family: $font-list;
+    }
+    h3 {
+        margin-left: 13px;
+        font-family: $font-heading;
+        font-style: oblique;
+        font-size: 1rem;
+        margin-top: -19px;
+        color: $gray-6;
+        text-decoration: underline;
+    }
+    background: linear-gradient(90deg, $gray-2, $gray-1);
+    @include block;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-left: 10px solid $gray-3;
+}
+.footer {
+    @include block;
+    @include center;
+    p {
+        font-family: $font-list;
+        color: $white;
+    }
+}
+.grid-ish > * {
+    flex: 1 1 200px;
 }
 
+.grid-ish {
+    @include block;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.header {
+    h1 {
+        display: inline-block;
+        margin: clamp(0.5rem, 1rem, 3vw);
+        background: linear-gradient(0deg, $gadient-start, $gradient-end);
+        text-decoration: none;
+        color: inherit;
+        border: 0;
+        text-shadow: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $white;
+    }
+}
+.icon {
+    width: 80px;
+    fill: rgba($gray-9, 0.4);
+}
+.icon-green {
+    width: 80px;
+    fill: $gadient-start;
+}
+.icon-lg {
+    width: 50px;
+    fill: rgba($gray-9, 0.7);
+}
+.icon-small {
+    width: 20px;
+    fill: $gadient-start;
+}
+.icon-small-green {
+    width: 20px;
+    fill: $gradient-end;
+}
+.introduction {
+    @include block;
+    p {
+        padding: clamp(0.8em, 1.2em, 6em); /* min, val, max */
+        font-size: clamp(0.9rem, 2rem, 1.2vw); /* min, val, max */
+        font-family: $font-body;
+        font-weight: 600;
+        line-height: 1.8rem;
+        color: $white;
+        background: rgba($gray-3, 0.1);
+        border-radius: 10px;
+    }
+}
+
+.nav {
+    @include block;
+    padding-right: 20px;
+}
+.parent {
+    position: relative;
+}
+.section__header {
+    z-index: 1;
+    h3 {
+        display: inline-block;
+        margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
+        font-size: clamp(2rem, 3rem, 3vw); /* min, val, max */
+        background: linear-gradient(45deg, $gadient-start, $gradient-end);
+        text-decoration: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $black;
+        font-family: $font-heading;
+    }
+    h2 {
+        display: inline-block;
+        margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
+
+        font-size: clamp(3rem, 4rem, 5vw); /* min, val, max */
+        background: linear-gradient(0deg, $gadient-start, $gradient-end);
+        text-decoration: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $black;
+        font-family: $font-heading;
+    }
+}
 .tags {
     margin: 1rem 0 2rem;
     padding: 0.5rem 0 1rem;
@@ -164,150 +316,4 @@ $gradient-end: #2ee5d6;
     -webkit-box-decoration-break: clone;
     background-clip: text;
     border-color: white;
-}
-
-.section__header {
-    z-index: 1;
-    h3 {
-        display: inline-block;
-        margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
-        font-size: clamp(2rem, 3rem, 3vw); /* min, val, max */
-        background: linear-gradient(45deg, $gadient-start, $gradient-end);
-        text-decoration: none;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $black;
-        font-family: $font-heading;
-    }
-    h2 {
-        display: inline-block;
-        margin: clamp(0.5rem, 0.25rem, 3rem); /* min, val, max */
-        font-size: clamp(3rem, 4rem, 5vw); /* min, val, max */
-        background: linear-gradient(0deg, $gadient-start, $gradient-end);
-        text-decoration: none;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: $black;
-        font-family: $font-heading;
-    }
-}
-
-.header {
-    h1 {
-        display: inline-block;
-        margin: clamp(0.5rem, 1rem, 3vw);
-        background: linear-gradient(0deg, $gadient-start, $gradient-end);
-        text-decoration: none;
-        color: inherit;
-        border: 0;
-        text-shadow: none;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-stroke-width: 1.5px;
-        -webkit-text-stroke-color: $white;
-    }
-}
-.introduction {
-    @include block;
-    p {
-        padding: clamp(0.8em, 1.2em, 6em); /* min, val, max */
-        font-size: clamp(0.9rem, 2rem, 1.2vw); /* min, val, max */
-        font-family: $font-body;
-        font-weight: 600;
-        line-height: 1.8rem;
-        color: $white;
-        background: rgba($gray-3, 0.1);
-        border-radius: 10px;
-    }
-}
-
-.card-main {
-    @include block;
-}
-.experience-card {
-    em {
-        font-size: 0.85rem;
-        color: $gray-7;
-        margin-left: 17px;
-    }
-
-    li {
-        color: $gray-8;
-        font-family: $font-list;
-    }
-    h3 {
-        margin-left: 13px;
-        font-family: $font-heading;
-        font-style: oblique;
-        font-size: 1rem;
-        margin-top: -19px;
-        color: $gray-6;
-        text-decoration: underline;
-    }
-    background: linear-gradient(90deg, $gray-2, $gray-1);
-    @include block;
-    padding: 20px;
-    margin-bottom: 40px;
-    border-left: 10px solid $gray-3;
-}
-li::before {
-    content: "✅ ";
-}
-
-.grid-ish > * {
-    flex: 1 1 200px;
-}
-
-.grid-ish {
-    @include block;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-.small-card {
-    margin: 10px;
-    opacity: 0.8;
-}
-.footer {
-    @include block;
-    @include center;
-    p {
-        font-family: $font-list;
-        color: $white;
-    }
-}
-
-.parent {
-    position: relative;
-}
-.child {
-    position: absolute;
-    // background-image: url("/mine.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: -100;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    mix-blend-mode: soft-light;
-}
-.child1 {
-    position: absolute;
-    // background: linear-gradient(90deg, rgba(blue, 0.2), rgba(yellow, 0.2));
-    z-index: -101;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-.nav {
-    @include block;
-    padding-right: 20px;
 }
