@@ -125,6 +125,23 @@ strong {
   background-size: cover;
 }
 
+.box {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.box > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30px;
+          flex: 1 1 30px;
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +168,7 @@ strong {
   scroll-snap-align: start;
   clear: both;
   border: 1px solid #969696;
+  opacity: 0.95;
 }
 
 .card-body {
@@ -381,7 +399,17 @@ strong {
 
 .icon {
   width: 80px;
-  fill: rgba(250, 250, 250, 0.4);
+  fill: rgba(250, 250, 250, 0.6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin: 10px;
+}
+
+.icon :hover {
+  fill: #2ee5d6;
+  width: 90px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .icon-green {

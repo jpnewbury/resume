@@ -5,6 +5,10 @@ import Toolbox from "../components/svg/toolbox";
 import Check from "../components/svg/check";
 import Check2 from "../components/svg/check2";
 import Briefcase from "../components/svg/briefcase";
+import Facebook from "../components/svg/facebook";
+import Instagram from "../components/svg/instagram";
+import Linked from "../components/svg/linkedin";
+import Dribble from "../components/svg/dribble";
 
 export default function Home() {
   return (
@@ -389,7 +393,6 @@ export default function Home() {
               <p></p>
               <p></p>
               <p></p>
-
               <span className="center">
                 <Image src="/23.jpg" height="200px" width="200px" alt="" />
               </span>
@@ -420,7 +423,6 @@ export default function Home() {
               <p></p>
               <p></p>
               <p></p>
-
               <span className="center">
                 <Image src="/MU.png" height="200px" width="200px" alt="" />
               </span>
@@ -579,6 +581,38 @@ export default function Home() {
               <p className="center">Product photograpy</p>
             </div>
           </article>
+        </section>
+        <section className="center">
+          <div className="box">
+            <div>
+              <Link href="https://www.facebook.com/john.p.newbury">
+                <a>
+                  <Facebook style="icon" />
+                </a>
+              </Link>
+            </div>
+            <div>
+              <Link href="https://www.instagram.com/j.p.newbury/">
+                <a>
+                  <Instagram style="icon" />
+                </a>
+              </Link>
+            </div>
+            <div>
+              <Link href="https://www.linkedin.com/in/johnpnewbury/">
+                <a>
+                  <Linked style="icon" />
+                </a>
+              </Link>
+            </div>
+            <div>
+              <Link href="https://dribbble.com/newburydesign">
+                <a>
+                  <Dribble style="icon" />
+                </a>
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
       <div>

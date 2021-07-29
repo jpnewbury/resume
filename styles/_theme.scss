@@ -20,6 +20,15 @@ $gradient-end: #2ee5d6;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.box {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.box > * {
+    flex: 1 1 30px;
+}
 .card {
     display: flex;
     position: relative;
@@ -37,6 +46,7 @@ $gradient-end: #2ee5d6;
     scroll-snap-align: start;
     clear: both;
     border: 1px solid $gray-5;
+    opacity: 0.95;
 }
 .card-body {
     @include block;
@@ -219,7 +229,14 @@ $gradient-end: #2ee5d6;
 }
 .icon {
     width: 80px;
-    fill: rgba($gray-9, 0.4);
+    fill: rgba($gray-9, 0.6);
+    transition: 0.2s;
+    margin: 10px;
+}
+.icon :hover {
+    fill: rgba($gradient-end, 1);
+    width: 90px;
+    transition: 0.2s;
 }
 .icon-green {
     width: 80px;
