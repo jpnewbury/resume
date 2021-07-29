@@ -1,15 +1,17 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import Toolbox from "../components/svg/toolbox";
 import Check from "../components/svg/check";
 import Check2 from "../components/svg/check2";
-import Briefcase from "../components/svg/briefcase";
 import Facebook from "../components/svg/facebook";
 import Instagram from "../components/svg/instagram";
 import Linked from "../components/svg/linkedin";
 import Dribble from "../components/svg/dribble";
-
+import Github from "../components/svg/github";
+import AE from "../components/svg/AfterEffects";
+import Photoshop from "../components/svg/photoshop";
+import Illustrator from "../components/svg/illustrator";
+import Indesign from "../components/svg/inDesign";
 export default function Home() {
   return (
     <div>
@@ -106,34 +108,28 @@ export default function Home() {
               </p>
               <div className="col-2l">
                 <div className="center">
-                  <Check style="icon-small" />
+                  <Photoshop style="icon-small" />
                 </div>
                 <div>
                   <li>Photoshop</li>
                 </div>
                 <div className="center">
-                  <Check style="icon-small" />
+                  <Illustrator style="icon-small" />
                 </div>
                 <div>
                   <li>Illustrator</li>
                 </div>
                 <div className="center">
-                  <Check style="icon-small" />
+                  <Indesign style="icon-small" />
                 </div>
                 <div>
                   <li>In-Design</li>
                 </div>
                 <div className="center">
-                  <Check style="icon-small" />
+                  <AE />
                 </div>
                 <div>
                   <li>After Effect</li>
-                </div>
-                <div className="center">
-                  <Check style="icon-small" />
-                </div>
-                <div>
-                  <li>Premiere</li>
                 </div>
               </div>
               <h3>New Tools</h3>
@@ -584,6 +580,13 @@ export default function Home() {
         </section>
         <section className="center">
           <div className="box">
+            <div>
+              <Link href="https://github.com/jpnewbury">
+                <a>
+                  <Github style="icon" />
+                </a>
+              </Link>
+            </div>
             <div>
               <Link href="https://www.facebook.com/john.p.newbury">
                 <a>
