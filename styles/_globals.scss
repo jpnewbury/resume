@@ -42,12 +42,12 @@ a {
     text-decoration: underline;
     color: $white;
 }
-p {
-    @include block;
-    line-height: 1.5em;
-    font-size: 1rem;
-    font-family: $font-body;
-}
+// p {
+//     @include block;
+//     line-height: 1.5em;
+//     font-size: 1rem;
+//     font-family: $font-body;
+// }
 
 h1 {
     @include block;
@@ -77,7 +77,7 @@ ul {
     font-size: 1rem;
     color: black;
 }
-li {
+p {
     color: $gray-9;
     font-family: $font-list;
     font-size: 1rem;

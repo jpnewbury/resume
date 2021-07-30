@@ -35,37 +35,37 @@ export default function Home() {
                 <Check style="icon-small" />
               </div>
               <div>
-                <li>React - Next</li>
+                <p>React - Next</p>
               </div>
               <div className="center">
                 <Check style="icon-small" />
               </div>
               <div>
-                <li>HTML</li>
+                <p>HTML</p>
               </div>
               <div className="center">
                 <Check style="icon-small" />
               </div>
               <div>
-                <li>CSS - SCSS</li>
+                <p>CSS - SCSS</p>
               </div>
               <div className="center">
                 <Check style="icon-small" />
               </div>
               <div>
-                <li>javaScript</li>
+                <p>javaScript</p>
               </div>
               <div className="center">
                 <Check style="icon-small" />
               </div>
               <div>
-                <li>SVG graphics</li>
+                <p>SVG graphics</p>
               </div>
               <div className="center">
                 <Check style="icon-small" />
               </div>
               <div>
-                <li>VS Code</li>
+                <p>VS Code</p>
               </div>
               <div className="center"></div>
               <div>
@@ -75,19 +75,19 @@ export default function Home() {
                 <Check2 style="icon-small-green" />
               </div>
               <div>
-                <li>PHP</li>
+                <p>PHP</p>
               </div>
               <div className="center">
                 <Check2 style="icon-small-green" />
               </div>
               <div>
-                <li>MySQL</li>
+                <p>MySQL</p>
               </div>
               <div className="center">
                 <Check2 style="icon-small-green" />
               </div>
               <div>
-                <li>Apache</li>
+                <p>Apache</p>
               </div>
             </div>
             <div class="tags">
@@ -111,25 +111,25 @@ export default function Home() {
                   <Photoshop style="icon-adobe" />
                 </div>
                 <div>
-                  <li>Photoshop</li>
+                  <p>Photoshop</p>
                 </div>
                 <div className="center">
                   <Illustrator style="icon-adobe" />
                 </div>
                 <div>
-                  <li>Illustrator</li>
+                  <p>Illustrator</p>
                 </div>
                 <div className="center">
                   <Indesign style="icon-adobe" />
                 </div>
                 <div>
-                  <li>In-Design</li>
+                  <p>In-Design</p>
                 </div>
                 <div className="center">
                   <AE style="icon-adobe" />
                 </div>
                 <div>
-                  <li>After Effect</li>
+                  <p>After Effect</p>
                 </div>
               </div>
               <h3>New Tools</h3>
@@ -138,13 +138,13 @@ export default function Home() {
                   <Check2 style="icon-small-green" />
                 </div>
                 <div>
-                  <li>XD</li>
+                  <p>XD</p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-small-green" />
                 </div>
                 <div>
-                  <li>Figma</li>
+                  <p>Figma</p>
                 </div>
               </div>
             </div>
@@ -173,57 +173,55 @@ export default function Home() {
                   <Check style="icon-green" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Designed single page web application (SPA) &nbsp;
                     <Link href="http://www.roaringfork.org/drought/hot-spots-for-trout/">
                       <a target="_blank">Hot Spots for Trout</a>
                     </Link>{" "}
                     campaign and citizen science data collection program.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Designed original Fly-Fishing Journal for education
                     programs.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Created digital illustrations, provide photography for use
                     in publications.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
-                    Wrote fly fishing articles for newsletter publication.
-                  </li>
+                  <p>Wrote fly fishing articles for newsletter publication.</p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Participated in stream surveys and data collection in
                     support of conservation efforts.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Painted original river-based fine art for auction to benefit
                     the organization.
-                  </li>
+                  </p>
                 </div>
               </div>
               <ul></ul>
@@ -249,55 +247,55 @@ export default function Home() {
                   <Check style="icon-green" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Produce all digital assets including illustrations,
                     photography, and graphic designs for&nbsp;
                     <Link href="https://flyfish-pied.vercel.app/">
                       <a target="_blank">business e-commerce website.</a>
                     </Link>
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check style="icon-green" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Developed full stack website using React/Next, MongoDB to
                     educate a fly-fishing audience.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check style="icon-green" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Implemented best practices for SEO ranking content migration
                     and development, responsive design and accessibility.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Maintain commercial fly design contract and serve as
                     Ambassador with Fulling Mill US.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>Built a social media presence as a brand ambassador.</li>
+                  <p>Built a social media presence as a brand ambassador.</p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Worked with Stripe, Squarespace on prior versions of
                     e-commerce website.
-                  </li>
+                  </p>
                 </div>
               </div>
             </div>
@@ -319,34 +317,34 @@ export default function Home() {
                   <Check style="icon-green" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Operated freelance web development and graphic design
                     company.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check style="icon-green" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Developed custom web applications based on unique business
                     models using PHP MySQL, HTML, CSS and javaScript.
-                  </li>
+                  </p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>Edited videos and created motion graphics.</li>
+                  <p>Edited videos and created motion graphics.</p>
                 </div>
                 <div className="center">
                   <Check2 style="icon-lg" />
                 </div>
                 <div>
-                  <li>
+                  <p>
                     Primary collaborators: Steinhauer Management Group, Gukeisen
                     Design, Sales Tax Support.com.
-                  </li>
+                  </p>
                 </div>
               </div>
               <ul></ul>
@@ -448,41 +446,41 @@ export default function Home() {
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
+                <p>
                   Performed stream surveys using the R6 protocol on several
                   streams.
-                </li>
+                </p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
-                  Performed data entry and processing, and quality control using
+                <p>
+                  Performed data entry and processing, and quapty control using
                   MS Access and Excel.
-                </li>
+                </p>
               </div>
 
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
+                <p>
                   Worked with maps, GPS and GIS to find and record coordinates,
                   plan access to streams and calculate mapped stream data.
-                </li>
+                </p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>Stream snorkel survey.</li>
+                <p>Stream snorkel survey.</p>
               </div>
             </div>
           </article>
           <article className="experience-card">
             <h3>
-              Fish Biology Technician - US Fish and Wildlife Service Vancouver,
+              Fish Biology Technician - US Fish and Wildpfe Service Vancouver,
               WA
             </h3>
             <div className="col-2l">
@@ -490,51 +488,49 @@ export default function Home() {
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
+                <p>
                   Prepared pit tags and field gear, and planned logistics for
                   fishery research projects.
-                </li>
+                </p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
-                  Collected data; performed data entry and quality control with
+                <p>
+                  Collected data; performed data entry and quapty control with
                   MS Access and Excel.
-                </li>
+                </p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
+                <p>
                   Performed research in the field; using map, compass and GIS /
                   GPS.
-                </li>
+                </p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
+                <p>
                   Used data collection tools such as electro-shocking, hook and
-                  line sampling and radio tracking.
-                </li>
+                  pne samppng and radio tracking.
+                </p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>
-                  Collected and tested water quality samples in the field.
-                </li>
+                <p>Collected and tested water quapty samples in the field.</p>
               </div>
               <div className="center">
                 <Check2 style="icon-lg" />
               </div>
               <div>
-                <li>Fish identification.</li>
+                <p>Fish identification.</p>
               </div>
             </div>
           </article>
@@ -621,39 +617,29 @@ export default function Home() {
         <section className="center">
           <div className="box">
             <div>
-              <Link href="https://github.com/jpnewbury">
-                <a>
-                  <Github style="icon" />
-                </a>
-              </Link>
+              <a href="https://github.com/jpnewbury">
+                <Github style="icon" />
+              </a>
             </div>
             <div>
-              <Link href="https://www.facebook.com/john.p.newbury">
-                <a>
-                  <Facebook style="icon" />
-                </a>
-              </Link>
+              <a href="https://www.facebook.com/john.p.newbury">
+                <Facebook style="icon" />
+              </a>
             </div>
             <div>
-              <Link href="https://www.instagram.com/j.p.newbury/">
-                <a>
-                  <Instagram style="icon" />
-                </a>
-              </Link>
+              <a href="https://www.instagram.com/j.p.newbury/">
+                <Instagram style="icon" />
+              </a>
             </div>
             <div>
-              <Link href="https://www.linkedin.com/in/johnpnewbury/">
-                <a>
-                  <Linked style="icon" />
-                </a>
-              </Link>
+              <a href="https://www.linkedin.com/in/johnpnewbury/">
+                <Linked style="icon" />
+              </a>
             </div>
             <div>
-              <Link href="https://dribbble.com/newburydesign">
-                <a>
-                  <Dribble style="icon" />
-                </a>
-              </Link>
+              <a href="https://dribbble.com/newburydesign">
+                <Dribble style="icon" />
+              </a>
             </div>
           </div>
         </section>
