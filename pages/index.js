@@ -619,35 +619,38 @@ export default function Home() {
             <div>
               <a href="https://github.com/jpnewbury">
                 <Github style="icon" />
+                <p>Github</p>
               </a>
             </div>
             <div>
               <a href="https://www.facebook.com/john.p.newbury">
                 <Facebook style="icon" />
+                <p>Facebook</p>
               </a>
             </div>
             <div>
               <a href="https://www.instagram.com/j.p.newbury/">
                 <Instagram style="icon" />
+                <p>Instagram</p>
               </a>
             </div>
             <div>
               <a href="https://www.linkedin.com/in/johnpnewbury/">
                 <Linked style="icon" />
+                <p>LinkedIn</p>
               </a>
             </div>
             <div>
               <a href="https://dribbble.com/newburydesign">
                 <Dribble style="icon" />
+                <p>Dribble</p>
               </a>
             </div>
           </div>
         </section>
       </main>
       <div>
-        <Link href="#top">
-          <a>Back to top</a>
-        </Link>
+        <a href="#top">Back to top</a>
       </div>
     </div>
   );

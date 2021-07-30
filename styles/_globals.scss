@@ -41,6 +41,9 @@ a {
     font-weight: 700;
     text-decoration: underline;
     color: $white;
+    p {
+        display: none;
+    }
 }
 // p {
 //     @include block;
