@@ -108,25 +108,25 @@ export default function Home() {
               </p>
               <div className="col-2l">
                 <div className="center">
-                  <Photoshop style="icon-small" />
+                  <Photoshop style="icon-adobe" />
                 </div>
                 <div>
                   <li>Photoshop</li>
                 </div>
                 <div className="center">
-                  <Illustrator style="icon-small" />
+                  <Illustrator style="icon-adobe" />
                 </div>
                 <div>
                   <li>Illustrator</li>
                 </div>
                 <div className="center">
-                  <Indesign style="icon-small" />
+                  <Indesign style="icon-adobe" />
                 </div>
                 <div>
                   <li>In-Design</li>
                 </div>
                 <div className="center">
-                  <AE />
+                  <AE style="icon-adobe" />
                 </div>
                 <div>
                   <li>After Effect</li>

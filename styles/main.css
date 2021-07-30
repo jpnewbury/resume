@@ -423,8 +423,12 @@ strong {
 }
 
 .icon-small {
-  width: 20px;
+  width: 30px;
   fill: #ffd900;
+}
+
+.icon-adobe {
+  width: 30px;
 }
 
 .icon-small-green {
