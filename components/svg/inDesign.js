@@ -2,7 +2,11 @@ import React from "react";
 
 export default function inDesign(props) {
   return (
-    <svg viewBox="0 0 48 48">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      className={props.style}
+    >
       <path
         fill="#E91E63"
         d="M5,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H9c-2.209,0-4-1.791-4-4V10z"
