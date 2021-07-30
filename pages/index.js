@@ -439,15 +439,6 @@ export default function Home() {
               </div>
               <div>
                 <li>
-                  Performed data entry and processing, and quality control using
-                  MS Access and Excel.
-                </li>
-              </div>
-              <div className="center">
-                <Check2 style="icon-lg" />
-              </div>
-              <div>
-                <li>
                   Performed stream surveys using the R6 protocol on several
                   streams.
                 </li>
@@ -457,9 +448,25 @@ export default function Home() {
               </div>
               <div>
                 <li>
-                  Worked with maps and GPS units to mark and record coordinates,
+                  Performed data entry and processing, and quality control using
+                  MS Access and Excel.
+                </li>
+              </div>
+
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Worked with maps, GPS and GIS to find and record coordinates,
                   plan access to streams and calculate mapped stream data.
                 </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>Stream snorkel survey.</li>
               </div>
             </div>
           </article>
@@ -492,11 +499,34 @@ export default function Home() {
               </div>
               <div>
                 <li>
-                  Performed research in the field; using map, compass and GPS.
+                  Performed research in the field; using map, compass and GIS /
+                  GPS.
                 </li>
               </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Used data collection tools such as electro-shocking, hook and
+                  line sampling and radio tracking.
+                </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>
+                  Collected and tested water quality samples in the field.
+                </li>
+              </div>
+              <div className="center">
+                <Check2 style="icon-lg" />
+              </div>
+              <div>
+                <li>Fish identification.</li>
+              </div>
             </div>
-            <ul></ul>
           </article>
         </section>
         <span className="section__header" id="art">
