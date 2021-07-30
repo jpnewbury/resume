@@ -148,7 +148,7 @@ $gradient-end: #2ee5d6;
 
 .col-2l {
     display: grid;
-    grid-template-columns: 20px 1fr;
+    grid-template-columns: 30px 1fr;
 }
 .container {
     max-width: 1000px;
@@ -267,7 +267,9 @@ $gradient-end: #2ee5d6;
         border-radius: 10px;
     }
 }
-
+.margin {
+    margin: 20px;
+}
 .nav {
     @include block;
     padding-right: 20px;

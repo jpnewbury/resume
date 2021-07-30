@@ -292,8 +292,8 @@ strong {
 .col-2l {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20px 1fr;
-      grid-template-columns: 20px 1fr;
+  -ms-grid-columns: 30px 1fr;
+      grid-template-columns: 30px 1fr;
 }
 
 .container {
@@ -448,6 +448,10 @@ strong {
   color: white;
   background: rgba(100, 100, 100, 0.1);
   border-radius: 10px;
+}
+
+.margin {
+  margin: 20px;
 }
 
 .nav {

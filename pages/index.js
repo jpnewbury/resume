@@ -389,8 +389,13 @@ export default function Home() {
               <p></p>
               <p></p>
               <p></p>
-              <span className="center">
-                <Image src="/23.jpg" height="200px" width="200px" alt="" />
+              <span className="center margin">
+                <Image
+                  src="/23.jpg"
+                  height="150px"
+                  width="150px"
+                  alt="Logo for Mt Hood Communirty College"
+                />
               </span>
               <p></p>
             </div>
@@ -419,8 +424,13 @@ export default function Home() {
               <p></p>
               <p></p>
               <p></p>
-              <span className="center">
-                <Image src="/MU.png" height="200px" width="200px" alt="" />
+              <span className="center margin">
+                <Image
+                  src="/MU.png"
+                  height="150px"
+                  width="150px"
+                  alt="Logo for Marylhurst University"
+                />
               </span>
             </div>
           </article>
